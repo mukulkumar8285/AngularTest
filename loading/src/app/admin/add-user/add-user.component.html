@@ -1,0 +1,23 @@
+<div class="container">
+    <h2 class="text-center">User List</h2>
+    <div class="row mb-3">
+      <button (click)="search()" class="btn btn-primary">Fetch Users</button>
+    </div>
+    
+    <div *ngIf="loading">
+      <ngx-skeleton-loader count="10" class="skeleton-loader" appearance="line"></ngx-skeleton-loader>
+    </div>
+  
+    <div class="row" *ngIf="!loading">
+      <div *ngFor="let user of users" class="col-md-3">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">User ID: {{ user.id }}</h5>
+            <p class="card-text">Title: {{ user.title }}</p>
+            <p class="card-text">Completed: {{ user.completed }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

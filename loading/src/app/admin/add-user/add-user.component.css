@@ -1,0 +1,27 @@
+.card {
+    width: 100%; /* Make the card take full width */
+    margin-bottom: 20px; /* Add some space between cards */
+    border: 1px solid #ccc; /* Optional: Add a border */
+    border-radius: 5px; /* Optional: Round the corners */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Optional: Add a shadow for depth */
+  }
+  
+  .card-title {
+    font-size: 1.25rem; /* Adjust font size for the title */
+    margin-bottom: 10px; /* Space below the title */
+  }
+  
+  .card-text {
+    font-size: 1rem; /* Adjust font size for text */
+    color: #555; /* Optional: Change text color */
+  }
+  .skeleton-loader {
+    height: 300px; /* Set the height of the loader container */
+  }
+  
+  .skeleton-loader line {
+    height: 40px; /* Adjust this value to increase the line height */
+    margin-bottom: 10px; /* Optional: space between lines */
+  }
+  
+  
